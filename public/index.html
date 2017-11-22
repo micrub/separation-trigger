@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function updateStats(data) {
+        document.getElementById('state').innerHTML = data;
+      }
+      var host = window.document.location.host.replace(/:.*/, '');
+      var ws = new WebSocket('ws://' + host + ':9090');
+      ws.onmessage = function (event) {
+        updateStats(JSON.parse(event.data));
+      };
+    </script>
+  </head>
+  <body>
+    <div id="state">
+      <h1>Initial</h1>
+    </div>
+  </body>
+</html>
