@@ -1,5 +1,5 @@
 {
-  "name": "td-web-sockets-server",
+  "name": "separation-trigger",
   "version": "1.0.0",
   "main": "./src/index.js",
   "license": "MIT",
@@ -12,9 +12,9 @@
     "ws": "^3.3.2"
   },
   "scripts": {
-    "start": "DEBUG=web-sockets-server node src/index.js",
-    "dev": "DEBUG=web-sockets-server nodemon src/index.js",
-    "enter": "DEBUG=web-sockets-server node src/start.js"
+    "start": "DEBUG=separation-trigger node src/index.js",
+    "dev": "DEBUG=separation-trigger nodemon src/index.js",
+    "enter": "DEBUG=separation-trigger node src/start.js"
   },
   "devDependencies": {
     "command-line-args": "^4.0.7",

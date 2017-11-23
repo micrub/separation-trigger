@@ -6,9 +6,8 @@ const consts = require('./consts')
 const queue = consts.queue;
 
 
-const NS = 'web-sockets-server';
 const WebSocket = require('ws');
-const d = require('debug')(NS);
+const d = require('debug')(consts.NS);
 
 app.use(express.static(path.join(__dirname, '../public')));
 
