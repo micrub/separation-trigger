@@ -10,4 +10,4 @@ function add(id) {
   }
 }
 
-export default add
+module.exports = add

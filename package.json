@@ -13,9 +13,12 @@
   },
   "scripts": {
     "start": "DEBUG=web-sockets-server node src/index.js",
-    "dev": "DEBUG=web-sockets-server nodemon src/index.js"
+    "dev": "DEBUG=web-sockets-server nodemon src/index.js",
+    "enter": "DEBUG=web-sockets-server node src/start.js"
   },
   "devDependencies": {
+    "command-line-args": "^4.0.7",
+    "command-line-usage": "^4.0.1",
     "nodemon": "^1.12.1"
   }
 }
